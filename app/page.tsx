@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image"; 
-import Script from 'next/script';
-import dynamic from 'next/dynamic';
-const DynamicProductList = dynamic(() => import('../components/ProductList'), { ssr: false });
+import ProductList from "./components/ProductList";
 
 
 
 
 const Home = () => {
   return (
-   <main className='bg-white'>
+   <main  className='bg-white'>
     <div className='text-black bg-white-300 p-3 columns-3 pt-5 flex items-center justify-between py-4 h-22 container mx-auto'>
     <Image src='/logo-redd.webp' width={150} height={280} alt={""} />
     <div className="relative flex justify-center lg:flex-grow bg-gr">
@@ -37,7 +35,7 @@ const Home = () => {
     <div>
    
     
-    <DynamicProductList />
+    <ProductList />
         </div>
     </div>
     </main>

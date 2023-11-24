@@ -18,9 +18,9 @@ const Home = () => {
         /> 
         </div>
         <div className="columns-3">
-        <h4>Country</h4>
-          <h4>Sign in</h4>
-          <h4>Cart</h4>
+        <a className="hover:text-red-400" href=""><h4>Country</h4></a>
+          <a className="hover:text-red-400" href=""><h4>Sign in</h4></a>
+          <a  className="hover:text-red-400"href=""><h4>Cart</h4></a>
         </div>
       
     </div>
